@@ -1,0 +1,32 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'myapp/styles/style.css' %}">
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<header>
+  <h1>Товары</h1>
+     </header>
+<div class="wrap">
+
+
+      <h1 class="section-name">Товары</h1>
+      <ol>
+        <li>Говядина</li>
+          <p>Стейк из окорока говяжий</p>
+          <p>Мясо говяжье</p>
+          <p>Говяжьи ребрышки</p>
+        <li>Свинина</li>
+          <p>Стейк из окорока говяжий</p>
+          <p>Стейк из окорока говяжий</p>
+          <p>Стейк из окорока говяжий</p>
+        <li>Курица</li>
+          <p>Курица целиком</p>
+          <p>Куриные ножки</p>
+          <p>Куриные крылышки</p>
+
+    </ol>
+
+{% endblock %}
